@@ -1,3 +1,23 @@
+.home {
+    display: flex;
+    gap: 300px;
+    margin-top: 60px;
+
+}
+
+.home_text {
+    font-size: 30px;
+
+}
+
+.home_text span{
+    color: #0066cc;
+}
+
+
+
+
+
 /* General Styles */
 body {
     font-family: 'Poppins' , sans-serif;
@@ -82,11 +102,12 @@ header p {
 }
 
 /* === Section Layout === */
-section {
+/* section {
   padding: 3rem 1.5rem;
   max-width: 1000px;
   margin: auto;
-}
+} */
+
 h2 {
   margin-bottom: 2rem;
   text-align: center;
@@ -94,6 +115,7 @@ h2 {
   color: #222;
   position: relative;
 }
+
 h2::after {
   content: '';
   width: 50px;
