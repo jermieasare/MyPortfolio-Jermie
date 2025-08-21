@@ -83,7 +83,7 @@ nav {
 }
 @media (max-width: 800px) {
   .nav-links {
-    position: absolute;
+    position: grid;
     top: 64px;
     left: 0;
     width: 100vw;
@@ -91,7 +91,7 @@ nav {
     background: linear-gradient(90deg, #4e6ae7 60%, #ee8c63 100%);
     gap: 0;
     box-shadow: 0 2px 12px rgba(78,106,231,0.08);
-    display: none;
+    display: flex;
   }
   .nav-links.show {
     display: flex;
