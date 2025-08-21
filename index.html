@@ -20,11 +20,9 @@
   <header>
     <nav class="navbar">
       <div class="logo">Jemima</div>
-      <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" tabindex="0">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <button class="nav-toggle" id="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -35,25 +33,13 @@
       </ul>
     </nav>
   </header>
-  <script>
-    // Hamburger menu toggle
-    const navToggle = document.getElementById('nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-    navToggle.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        navLinks.classList.toggle('show');
-      }
-    });
-  </script>
+
   
   <!-- === Home Section === -->
     <main>
       <section class="home-section" id="home">
         <div class="home_text">
-            <h1>Hi,<br>I am <span>Jemima Asare</span><br><span class="web-dev">Web developer</span></h1>
+            <h1>Hi,<br>I am <span class="web-dev">Jemima Asare</span><br>Web developer</h1>
         </div>
         <div class="profile-picture">
             <img src="ProfessionalPic.png" alt="Profile Picture" class="profile-pic">
@@ -206,6 +192,20 @@
              <p>&copy; 2025 Jemima Asare | built with using HTML & CSS</p>
         </div>
     </footer>
+
+      <script>
+    // Hamburger menu toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+    navToggle.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        navLinks.classList.toggle('show');
+      }
+    });
+  </script>
 
   </body>
 </html>

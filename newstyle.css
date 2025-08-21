@@ -1,0 +1,160 @@
+/* General Body and Main Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Home Section Styling */
+.home-section {
+  display: flex; /* Use flexbox for a flexible layout */
+  flex-direction: column; /* Stack elements vertically by default */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text within the home section */
+  padding: 50px 20px;
+  min-height: 80vh;
+  justify-content: center;
+}
+
+.home_text h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.web-dev {
+  color: #007bff; /* Highlight color */
+}
+
+.profile-picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Media Query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+  .home-section {
+    flex-direction: row; /* Switch to horizontal layout on larger screens */
+    text-align: left; /* Align text to the left */
+    justify-content: space-around; /* Space out the text and image */
+    padding: 100px 20px;
+  }
+  
+  .home_text {
+    flex: 1; /* Allow the text to grow */
+    max-width: 50%; /* Limit text width */
+  }
+
+  .home_text h1 {
+    font-size: 3.5em;
+  }
+
+  .profile-picture {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-left: 50px;
+    margin-top: 0;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Other Sections (About, Projects, Skills, etc.) for responsiveness */
+.section {
+  padding: 60px 0;
+}
+
+.about-section,
+.projects-grid,
+.skills-grid,
+.experience-list {
+  display: grid;
+  gap: 20px;
+}
+
+/* Project and Skills Grids */
+@media (min-width: 576px) {
+  .projects-grid,
+  .skills-grid,
+  .experience-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Navbar responsiveness (hamburger menu) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+/* Hide the hamburger menu on desktop */
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .nav-links {
+    display: none; /* Hide navigation links by default on mobile */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show navigation links when the 'show' class is present */
+  }
+
+  .nav-toggle {
+    display: block; /* Display the hamburger menu button */
+    font-size: 1.5em;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+}
