@@ -9,6 +9,7 @@
 
      <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6933c05296.js" crossorigin="anonymous"></script>
 
     <!-- External CSS -->
      <link rel="stylesheet" href="style.css">
@@ -29,35 +30,55 @@
     </nav>
   </header>
   
-
-    <!--==== Header ====-->
+  <!-- === Home Section === -->
     <main>
-      <section class="home">
+      <section class="home-section" id="home">
         <div class="home_text">
-            <h1>Hi,<br>I am <span>Jemima Asare</span><br> Web developer</h1>
+            <h1>Hi,<br>I am <span>Jemima Asare</span><br><span class="web-dev">Web developer</span></h1>
         </div>
         <div class="profile-picture">
-            <img src="c:\Users\Jermie\Downloads\Professional Pic.png" alt="Profile Picture" class="profile-pic">
+            <img src="ProfessionalPic.png" alt="Profile Picture" class="profile-pic">
         </div>
       </section>
 
-          
-
-
-    <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div >
-                    
-                </div>
-            </section>
          
     <!-- === About Section === -->
-    <section class="about section " id="about">
+    <section class="about-section " id="about">
         <h2 class="section-title">About</h2>
-        <p>I am an aspiring web developer passionate about building responsive,
-      user-friendly websites. I enjoy learning HTML, CSS, and soon JavaScript,
-      and I am eager to grow my skills through projects and collaboration.</p>
+        <p>Hello! I'm Jermie Asare, an <span>aspiring web developer</span> dedicated to creating modern, responsive, and user-friendly websites. My journey in tech is driven by curiosity and a passion for problem-solving. I enjoy working with HTML, CSS, and Python, and I'm always eager to learn new technologies and collaborate on exciting projects. My goal is to build digital experiences that make a difference.</p>
+        <p>If you'd like to know more about my background and experience, you can upload your CV below for review or download my latest CV.</p>
+        <div class="cv-actions">
+
+          <a href="cv.pdf" download class="cv-btn download-btn">Download My CV</a>
+
         </div>
+    </section>
+
+    <!-- === Experience Section === -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="experience-list">
+          <div class="experience-item">
+            <h3>Role</h3>
+            <p><strong>Company</strong> | June 2024 - August 2024</p>
+            <ul>
+              <li>Improved user experience and accessibility for multiple projects.</li>
+              <li>.</li>
+              <li>Learned best practices for code quality and version control.</li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3>Intern</h3>
+            <p><strong>Stemaide Africa</strong> | September 2022 - October 2024</p>
+            <ul>
+              <li>Assisted in building responsive websites using HTML, CSS, and JavaScript.</li>
+              <li>Worked directly with clients to gather requirements and deliver solutions.</li>
+              <li>Collaborated with designers and senior developers to deliver client projects.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- === Projects Section === -->
@@ -65,18 +86,18 @@
          <div class="container">
               <h2>Projects</h2>
               <div class="projects-grid">
-                  </div class="project-card">
-                       <h3>Portfolio Website</h3>
-                       <p>A responsive portfolio showing my skills, projects and contact information.</p>
-                  </div>
-                  <div class="project card">
-                       <h3>project name</h3>
-                       <p>project about</p>
-                  </div>
-                  <div class="project card">
-                       <h3>project name</h3>
-                       <p>project about</p>
-                  </div>
+                <div class="project-card">
+                  <h3>Portfolio Website</h3>
+                  <p>A responsive portfolio showing my skills, projects, and contact information. Built with HTML, and CSS for a modern look.</p>
+                </div>
+                <div class="project-card">
+                  <h3>BMI Tracker</h3>
+                  <p>Calculate BMI based on inputs. Gives insight, may suggest if you're underweight, healthy, overweight or obese, and it has a responsive design.</p>
+                </div>
+                <div class="project-card">
+                  <h3>Task Manager</h3>
+                  <p>Organize your daily tasks with a simple, clean interface. Includes add, edit, delete, and mark-complete features.</p>
+                </div>
               </div>
           </div>
       </section>
@@ -86,18 +107,64 @@
         <div class="container">
             <h2>My Skills</h2>
             <div class="skills-grid">
-                  </div class="skills-card">
-                       <h3>HTML</h3>
-                       <p>A responsive portfolio showing my skills, projects and contact information.</p>
+
+                <div class="skills-card" id="html-card">
+                  <div class="skill-logo">
+                    <i class="fa-brands fa-html5"></i>
                   </div>
-                  <div class="skills-card">
-                       <h3>CSS</h3>
-                       <p>project about</p>
+                  <div class="skill-info">
+                    <h3>HTML</h3>
+                    <p>Markup language that tells browser how to display and structure websites.</p>
                   </div>
-                  <div class="skills-card">
-                       <h3>Python</h3>
-                       <p>project about</p>
+                </div>
+                <div class="skills-card" id="css-card">
+                  <div class="skill-logo">
+                    <i class="fa-brands fa-css3-alt"></i>
                   </div>
+                  <div class="skill-info">
+                    <h3>CSS</h3>
+                    <p>Beautiful, responsive layouts and visual design.</p>
+                  </div>
+                </div>
+                <div class="skills-card" id="python-card">
+                  <div class="skill-logo">
+                    <i class="fa-brands fa-python"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h3>Python</h3>
+                    <p>Powerful scripting and automation for projects.</p>
+                  </div>
+                </div>
+            </div>
+            <h3 style="margin-top:40px;">Tools I've Worked With</h3>
+            <div class="skills-grid">
+                <div class="skills-card" id="github-card">
+                  <div class="skill-logo">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h3>GitHub</h3>
+                    <p>Track changes of codes and collaboration for projects.</p>
+                  </div>
+                </div>
+                <div class="skills-card" id="spreadsheet-card">
+                  <div class="skill-logo">
+                    <i class="fa-solid fa-table"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h3>Spreadsheet</h3>
+                    <p>Organize, analyze, and visualize data efficiently.</p>
+                  </div>
+                </div>
+                <div class="skills-card" id="atom-card">
+                  <div class="skill-logo">
+                    <i class="fa-brands fa-atom"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h3>Atom</h3>
+                    <p>Text editor for coding and collaboration.</p>
+                  </div>
+                </div>
               </div>
         </div>
     </section>
@@ -107,9 +174,9 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact Me</h2>
-            <p><a href="mailto:jermieasare@gmail.com" target="jermieasare@gmail.com">Email 📧</a></p>
-            <p><a href="https://github.com/jermieasare" target="_jermieasare@gmail.com">GitHub 💻</a></p>
-    <p><a href="https://www.linkedin.com/in/jemima-sekyeraa-asare" target="_Jemima Sekyeraa Asare">LinkedIn 🔗</a></p>
+            <p><a href="mailto:jermieasare@gmail.com" target="jermieasare@gmail.com">Email <i class="fa-solid fa-envelope"></i></a></p>
+            <p><a href="https://github.com/jermieasare" target="_jermieasare@gmail.com">GitHub <i class="fa-brands fa-github"></i></a></p>
+    <p><a href="https://www.linkedin.com/in/jemima-sekyeraa-asare" target="_Jemima Sekyeraa Asare">LinkedIn <i class="fa-brands fa-linkedin"></i></a></p>
         </div>
     </section>
 </main>
