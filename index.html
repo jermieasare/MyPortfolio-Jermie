@@ -20,9 +20,7 @@
   <header>
     <nav class="navbar">
       <div class="logo">Jemima</div>
-      <button class="nav-toggle" id="nav-toggle">
-        <i class="fa-solid fa-bars"></i>
-    </button>
+  <!-- === Navigation Links === -->
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -31,6 +29,12 @@
         <li><a href="#projects">Experiences</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+  <!-- === Toggle Button === -->
+      <button class="menu-toggle" onclick="toggleMenu()" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
     </nav>
   </header>
 
@@ -45,7 +49,7 @@
             <a href="#about" class="readmore-btn">Read More</a>
         </div>
         <div class="profile-picture modern-profile">
-            <img src="prof-pic.jpeg" alt="Profile Picture" class="profile-pic modern-pic">
+            <img src="portpic.png" alt="Profile Picture" class="profile-pic modern-pic">
         </div>
       </section>
 
@@ -54,7 +58,7 @@
     <section class="about-section " id="about">
         <div class="about-modern">
           <div class="about-pic">
-            <img src="mypic.jpeg" alt="About Picture" class="about-profile-pic">
+            <img src="myppic.jpeg" alt="About Picture" class="about-profile-pic">
           </div>
           <div class="about-content">
             <h2 class="section-title">About</h2>
