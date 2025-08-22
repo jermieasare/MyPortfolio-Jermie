@@ -64,6 +64,7 @@ nav {
 .nav-links li {
   display: flex;
   align-items: center;
+  
 }
 .nav-links a {
   text-decoration: none;
@@ -74,6 +75,10 @@ nav {
   border-radius: 24px;
   margin: 0 8px;
   transition: color 0.2s, box-shadow 0.2s;
+}
+.nav-links a:hover {
+  color: #c4ccf1;
+  box-shadow: 0 2px 8px rgba(78,106,231,0.12);
 }
 
 .menu-toggle {
