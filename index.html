@@ -2,38 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>Jemima Asare- Portolio</title>
+    <title>Jemima Asare</title>
     <link rel="stylesheet" href="style.css">
-
      <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6933c05296.js" crossorigin="anonymous"></script>
-
-    <!-- External CSS -->
-     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- === Navbar === -->
   <header>
     <nav class="navbar">
-      <div class="logo">Jemima</div>
-  <!-- === Navigation Links === -->
-      <ul class="nav-links" id="nav-links">
+      <a href="#home" class="logo">JAS</a>
+      <!-- === Navigation Links === -->
+      <ul id="sidemenu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#works">Work</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="menu-close-btn" class="nav-button" aria-label="Close navigation menu">
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+        </li>
       </ul>
-  <!-- === Toggle Button === -->
-      <button class="menu-toggle" onclick="toggleMenu()" id="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
+      <button id="menu-open-btn" class="nav-button" aria-label="Open navigation menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
     </nav>
   </header>
@@ -43,167 +39,198 @@
     <main>
       <section class="home-section" id="home">
         <div class="home_text">
-            <h1>Welcome!</h1>
-            <p class="welcome-desc">I am <span class="highlight">Jemima Asare</span>, a passionate Web Developer dedicated to building a functional digital experiences.<br>
-            I love turning ideas into reality with code and design.</p>
+            <h1>Jemima Asare</h1>
+            <p class="welcome-desc">A passionate Web Developer dedicated to building functional and modern digital experiences.</p>
             <a href="#about" class="readmore-btn">Read More</a>
         </div>
         <div class="profile-picture modern-profile">
-            <img src="portpic.png" alt="Profile Picture" class="profile-pic modern-pic">
+            <img src="assets/prof-pic.jpeg" alt="Profile Picture" class="profile-pic modern-pic">
         </div>
       </section>
 
          
     <!-- === About Section === -->
     <section class="about-section " id="about">
-        <div class="about-modern">
-          <div class="about-pic">
-            <img src="myppic.jpeg" alt="About Picture" class="about-profile-pic">
+       <div class="container">
+        <h2 class="section-title">About Me</h2>
+          <div class="row">
+          <div class="about-col-1">
+            <img src="assets/pp.jpeg" alt="About Picture" class="about-profile-pic">
           </div>
-          <div class="about-content">
-            <h2 class="section-title">About</h2>
-            <p> As an <span class="highlight">aspiring web developer</span> dedicated to creating modern, responsive, and user-friendly websites. My journey in tech is driven by curiosity and a passion for problem-solving. I enjoy working with HTML, CSS, and Python, and I'm always eager to learn new technologies and collaborate on exciting projects. My goal is to build digital experiences that make a difference.</p>
+
+          <div class="about-col-2">
+            <p> I am a passionate <span class="highlight"> web developer</span> dedicated to creating modern, responsive, and user-friendly websites. My journey in tech is driven by curiosity and a passion for problem-solving. I enjoy working with HTML, CSS, and Python, and I'm always eager to learn new technologies and collaborate on exciting projects. My goal is to build digital experiences that make a difference.</p>
+
+            <div class="accordion">
+              <details class="accordion-item" open>
+                <summary class="accordion-header">My Skills</summary>
+                <div class="accordion-content">
+                  <ul>
+                    <li><span>Programming language</span><br>HTML/CSS/Python/Javascript.</li>
+                    <li><span>Framework</span><br>Nicegui</li>
+                    <li><span>Tools</span><br>VsCode/Tkinter/Git/GitHub/Atom</li>
+                    <li><span>Database</span><br>MongoDB</li>
+                  </ul>
+                </div>
+              </details>
+              <details class="accordion-item">
+                <summary class="accordion-header">My Experience</summary>
+                <div class="accordion-content">
+                  <ul>
+                    <li><span>2022 - 2024</span><br> Intern at Stemaide Africa, actively participated in programs and seminars with the team that foster problem-solving, creativity, and innovation among young Africans. </li>
+                    <li><span>2022 - Present</span><br> Volunteer at The Larbi Foundation, contributed and attended countless outreach for the less privileged, including the elderly, people with special needs, at-risk-youth, and orphans. </li>
+                    <li><span>2024 - 2025</span><br> Customer Rep at DStv Ghana and Showmax Ghana, resolved customer queries, guided customers through account setup and troubleshooting, and supported 300+ users in subscribing to and accessing services. </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="accordion-item">
+                <summary class="accordion-header">My Education</summary>
+                <div class="accordion-content">
+                  <ul>
+                    <li><span>2019 - 2023</span><br>Degree in BA. Information Studies at UG</li> 
+                    <li><span>2025</span><br>Web Development Grow Program at MEST Africa</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+
             <div class="cv-actions">
-              <a href="JEMIMA-SEKYERAA-ASARE-CV.pdf" download class="cv-btn download-btn">Download My CV</a>
+              <a href="assets/JEMIMA-SEKYERAA-ASARE-Open.pdf" download class="cv-btn">Download My CV</a>
             </div>
           </div>
         </div>
     </section>
-
-    <!-- === Skills Section === -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skills-card" id="html-card">
-                  <div class="skill-logo">
-                    <i class="fa-brands fa-html5"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h3>HTML</h3>
-                    <p>Markup language that tells browser how to display and structure websites.</p>
-                  </div>
-                </div>
-                <div class="skills-card" id="css-card">
-                  <div class="skill-logo">
-                    <i class="fa-brands fa-css3-alt"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h3>CSS</h3>
-                    <p>Beautiful, responsive layouts and visual design.</p>
-                  </div>
-                </div>
-                <div class="skills-card" id="python-card">
-                  <div class="skill-logo">
-                    <i class="fa-brands fa-python"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h3>Python</h3>
-                    <p>Powerful scripting and automation for projects.</p>
-                  </div>
-                </div>
-            </div>
-            <h3 style="margin-top:40px;">Tools I've Worked With</h3>
-            <div class="skills-grid">
-                <div class="skills-card" id="github-card">
-                  <div class="skill-logo">
-                    <i class="fa-brands fa-github"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h3>GitHub</h3>
-                    <p>Track changes of codes and collaboration for projects.</p>
-                  </div>
-                </div>
-                <div class="skills-card" id="spreadsheet-card">
-                  <div class="skill-logo">
-                    <i class="fa-solid fa-table"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h3>Spreadsheet</h3>
-                    <p>Organize, and visualize data efficiently.</p>
-                  </div>
-                </div>
-                <div class="skills-card" id="atom-card">
-                  <div class="skill-logo">
-                    <i class="fa-brands fa-atom"></i>
-                  </div>
-                  <div class="skill-info">
-                    <h3>Atom</h3>
-                    <p>Text editor for coding and collaboration.</p>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </section>
-    
-    <!-- === Experience Section === -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="experience-list timeline">
-          <div class="experience-item">
-            <div class="exp-icon"><i class="fa-solid fa-briefcase"></i></div>
-            <div class="exp-content">
-              <h3>Social Media Volunteer</h3>
-              <span class="exp-company"> The Larbi Foundation</span>
-              <span class="exp-date">June 2022 - Present</span>
-              <ul>
-                <li>Manage the foundation’s social media platforms to raise awareness of its mission and activities supporting the less privileged, including the elderly, people with special needs, at-risk youth, and orphans.</li>
-                <li>Contributed to strengthening the foundation’s visibility and support network, enabling greater impact in advancing its cause.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="experience-item">
-            <div class="exp-icon"><i class="fa-solid fa-user-graduate"></i></div>
-            <div class="exp-content">
-              <h3>Intern</h3>
-              <span class="exp-company">Stemaide Africa</span>
-              <span class="exp-date">September 2022 - Present</span>
-              <ul>
-                <li>Support the edtech startup’s mission to revolutionize education in Africa by actively participating in programs and seminars with the team</li>
-                <li>Contribute to initiatives that foster problem-solving, creativity, and innovation among young Africans.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- === Projects Section === -->
      <section id="projects" class="section">
          <div class="container">
-              <h2>Projects</h2>
+              <h2 class="section-title">Projects</h2>
               <div class="projects-grid">
                 <div class="project-card">
-                  <div class="project-img"><i class="fa-solid fa-laptop-code"></i></div>
+                  <div class="project-img"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
                   <h3>Portfolio Website</h3>
                   <p>A responsive portfolio showing my skills, projects, and contact information. Built with HTML, and CSS for a modern look.</p>
                   <a href="https://jermieasare.github.io/MyPortfolio-Jermie/" class="project-btn" target="_blank">View Demo</a>
                 </div>
                 <div class="project-card">
-                  <div class="project-img"><i class="fa-solid fa-heart-pulse"></i></div>
-                  <h3>BMI Tracker</h3>
-                  <p>Calculate BMI based on inputs. Gives insight, may suggest if you're underweight, healthy, overweight or obese, and it has a responsive design.</p>
-                  <a href="#" class="project-btn">View Demo</a>
+                  <div class="project-img"><i class="fa-solid fa-list-check" aria-hidden="true"></i></div>
+                  <h3>Advertisement Management</h3>
+                  <p>Developed the frontend of a responsive advertisement management platform with features to post adverts, browse listings in agrid view, and manage adverts through view, edit, and delete options. Collaborated with backend APIs to fetch and display data seamlessly..</p>
+                  <a href="https://github.com/KAJ-GH/advertisement_manager_FE.git" class="project-btn">View Demo</a>
                 </div>
                 <div class="project-card">
-                  <div class="project-img"><i class="fa-solid fa-list-check"></i></div>
-                  <h3>Task Manager</h3>
-                  <p>Organize your daily tasks with a simple, clean interface. Includes add, edit, delete, and mark-complete features.</p>
-                  <a href="https://jermieasare.github.io/task_manager/" class="project-btn" target="_blank">View Demo</a>
+                  <div class="project-img"><i class="fa-solid fa-list-check" aria-hidden="true"></i></div>
+                  <h3>Event Management System</h3>
+                  <p>Built the frontend of an event management system using NiceGUI (Python) and later integrated APIs from the backend to enable event creation, registration, and user authentication.</p>
+                  <a href="https://github.com/jermieasare/event_manager.git" class="project-btn" target="_blank">View Demo</a>
                 </div>
               </div>
           </div>
       </section>
 
+    <!---------------------------------Works------------------------->
+  <section id="works" class="my-work-section">
+    <div class="container">
+      <h2 class="section-title">My Work</h2>
+
+      <div class="work-grid">
+          <div class="work-card">
+              <div class="card-content">
+                  <img src="assets/restaurant.jpg" alt="A simple restaurant website using Nicegui" class="work-image">
+                  <div class="card-overlay">
+                      <h3 class="overlay-title">Restaurant Website</h3>
+                      <p class="overlay-description">A simple restaurant website built with Python and the NiceGUI framework.</p>
+                      <div class="tags">
+                          <span class="tag">Nicegui</span>
+                          <span class="tag">Python</span>
+                  </div>
+                  <a href="https://myminirestaurant.onrender.com/" class="view-project-link">View Project</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="work-card">
+              <div class="card-content">
+                  <img src="assets/skin_care.jpg" alt="Skincare Website Project" class="work-image">
+                  <div class="card-overlay">
+                      <h3 class="overlay-title">Skincare Website</h3>
+                      <p class="overlay-description">A concept for a modern e-commerce website for a skincare brand.</p>
+                      <div class="tags">
+                          <span class="tag">HTML</span>
+                          <span class="tag">CSS</span>
+                      </div>
+                      <a href="https://jermieasare.github.io/MyMiniProjects/" class="view-project-link">View Project ↗</a>
+                  </div>
+              </div>
+          </div>
+          <div class="work-card">
+              <div class="card-content">
+                  <img src="assets/task_manager.jpg" alt="Task Manager" class="work-image">
+                  <div class="card-overlay">
+                      <h3 class="overlay-title">Task Manager</h3>
+                      <p class="overlay-description">Developed a system to help users create, organize, and track tasks efficiently.</p>
+                      <div class="tags">
+                           <span class="tag">Python</span>
+                           <span class="tag">Tkinter</span>
+                           <span class="tag">MongoDB</span>
+                      </div>
+                      <a href="https://github.com/jermieasare/task_manager.git" class="view-project-link">View Project</a>
+                  </div>
+              </div>
+          </div>
+          <div class="work-card">
+              <div class="card-content">
+                  <img src="assets/advertising.jpg" alt="Advertisement Management" class="work-image">
+                  <div class="card-overlay">
+                      <h3 class="overlay-title">Advertisement Management</h3>
+                      <p class="overlay-description">Built a platform for posting, viewing, and managing adverts with ease.</p>
+                      <div class="tags">
+                           <span class="tag">Python</span>
+                           <span class="tag">NiceGUI</span>
+                      </div>
+                      <a href="https://github.com/KAJ-GH/advertisement_manager_FE.git" class="view-project-link">View Project</a>
+              </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </section>
 
     <!-- === Contact Section === -->
     <section id="contact" class="section">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p><a href="mailto:jermieasare@gmail.com" target="jermieasare@gmail.com">Email <i class="fa-solid fa-envelope"></i></a></p>
-            <p><a href="https://github.com/jermieasare" target="_jermieasare@gmail.com">GitHub <i class="fa-brands fa-github"></i></a></p>
-    <p><a href="https://www.linkedin.com/in/jemima-sekyeraa-asare-/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_Jemima Sekyeraa Asare">LinkedIn <i class="fa-brands fa-linkedin"></i></a></p>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="row">
+            <div class="contact-left">
+              <p>
+                <a href="mailto:jermieasare@gmail.com"><i class="fa fa-envelope"></i> jermieasare@gmail.com</a>
+              </p>
+              <p>
+                <a href="tel:0501299872"><i class="fas fa-phone-square-alt"></i> 0501299872</a>
+              </p>
+              <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+              <div class="social-icons">
+                  <a href="https://github.com/jermieasare" ><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/jemima-sekyeraa-asare-/" ><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                  <a href="https://wa.me/233271752762"> <i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <label for="name" class="visually-hidden">Name</label>
+                <input id="name" type="text" name="name" placeholder="Name" required>
+                
+                <label for="email" class="visually-hidden">Email</label>
+                <input id="email" type="email" name="email" placeholder="Email" required>
+                
+                <label for="message" class="visually-hidden">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+                
+                <button type="submit" class="cv-btn">Send Message</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
         </div>
     </section>
 </main>
@@ -215,23 +242,8 @@
         </div>
     </footer>
 
-      <script>
-    // Hamburger menu toggle
-    const navToggle = document.getElementById('nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-    navToggle.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        navLinks.classList.toggle('show');
-      }
-    });
-  </script>
+    <!-- === Scripts === -->
+    <script src="javascript/script.js"></script>
 
   </body>
 </html>
-
-
-
-
