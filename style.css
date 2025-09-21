@@ -41,7 +41,7 @@ nav {
   justify-content: space-between;
   flex-wrap: nowrap;
   z-index: 1000;
-  padding: 10px 10%; /* Consistent padding */
+  padding: 10px 10%;
   box-shadow: 0 2px 12px rgba(78,106,231,0.08);
 }
 .logo {
@@ -121,15 +121,15 @@ nav .fa-times{
   max-width: 50%;
 }
 .home_text h1 {
-  font-size: 3.5rem; /* Increased font size */
+  font-size: 3.5rem; 
   margin-bottom: 15px;
 }
 .home_text p {
-  font-size: 1.5rem; /* Increased font size */
+  font-size: 1.5rem; 
   line-height: 1.6;
 }
 .highlight {
-  color: #ee8c63; /* Existing style */
+  color: #ee8c63; 
   font-weight: 800;
 }
 .readmore-btn {
@@ -150,7 +150,7 @@ nav .fa-times{
 .modern-pic {
   width: 250px;
   height: 400px;
-  border-radius: 10%; /* A circular picture looks more modern */
+  border-radius: 10%; 
   object-fit: cover;
   box-shadow: 0;
   transition :transform 0.3s, box-shadow 0.3s;
@@ -162,7 +162,7 @@ nav .fa-times{
 
 /* About Section Styles */
 .about-section {
-  padding: 50px 0 80px; /* Reduced top padding */
+  padding: 50px 0 80px; 
 }
 .row{
   display: flex;
@@ -212,7 +212,7 @@ nav .fa-times{
   color: #03387e;
   background-color: #f9f9f9;
   cursor: pointer;
-  list-style: none; /* Remove default marker */
+  list-style: none; 
   position: relative;
   transition: background-color 0.3s;
 }
